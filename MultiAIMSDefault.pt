@@ -1,4 +1,4 @@
-<tal:report>
+<tal:report define="model python:view.model;">
 
   <!-- REPORT CONTROLS -->
   <tal:t replace="structure python:view.render_controls(context, **options)" />
