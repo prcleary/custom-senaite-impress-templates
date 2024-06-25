@@ -1,0 +1,65 @@
+<tal:report>
+
+  <!-- REPORT CONTROLS -->
+  <tal:t replace="structure python:view.render_controls(context, **options)" />
+
+  <!-- REPORT JS -->
+  <tal:t replace="structure python:view.render_js(context, **options)" />
+
+  <!-- REPORT CSS -->
+  <tal:t replace="structure python:view.render_css(context, **options)" />
+
+  <!-- REPORT HEADER -->
+  <tal:t replace="structure python:view.render_header(context, **options)" />
+
+  <!-- REPORT INFO -->
+  <tal:t replace="structure python:view.render_info(context, **options)" />
+
+  <!-- REPORT ALERTS -->
+  <tal:t replace="structure python:view.render_alerts(context, **options)" />
+
+  <table class="table table-sm table-condensed">
+	  <tr>   
+		  <td class="label" i18n:translate="">
+			  <div>
+				  First name
+			  </div>
+		  </td>  
+		  <td> <a tal:content="model/PatientFullName/firstname"/></td>
+	  </tr>
+	  <tr>
+		  <td class="label" i18n:translate="">
+			  <div>
+				  Date of birth / Sex
+			  </div>
+		  </td>  
+		  <td> <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" /><a> / </a><a tal:condition="python: model.Sex == 'm'" tal:content="python: 'Male'" /><a tal:condition="python: model.Sex == 'f'" tal:content="python: 'Female'" /><a tal:condition="python: model.Sex == ''" tal:content="python: 'Undefined'" /></td>
+	  </tr>
+  </table>
+
+
+  <!-- REPORT SUMMARY -->
+  <tal:t replace="structure python:view.render_summary(context, **options)" />
+
+  <!-- REPORT RESULTS -->
+  <tal:t replace="structure python:view.render_results(context, **options)" />
+
+  <!-- RESULTS INTERPRETATION -->
+  <tal:t replace="structure python:view.render_interpretations(context, **options)" />
+
+  <!-- SAMPLE REMARKS -->
+  <tal:t replace="structure python:view.render_remarks(context, **options)" />
+
+  <!-- REPORT ATTACHMENTS -->
+  <tal:t replace="structure python:view.render_attachments(context, **options)" />
+
+  <!-- REPORT SIGNATURES -->
+  <tal:t replace="structure python:view.render_signatures(context, **options)" />
+
+  <!-- REPORT DISCREETER -->
+  <tal:t replace="structure python:view.render_discreeter(context, **options)" />
+
+  <!-- REPORT FOOTER -->
+  <tal:t replace="structure python:view.render_footer(context, **options)" />
+
+</tal:report>
