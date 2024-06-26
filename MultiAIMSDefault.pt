@@ -64,11 +64,19 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
+  <div>Age</div>
+  </td>
+  <td>
+  <a tal:content="python: '%d years, %d months' % (model.getAge().years, model.getAge().months)"/>
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
     <div>Patient Date Of Birth</div>
   </td>
   <td>
     <!-- <a tal:content="python:view.to_localized_time(model.getDateOfBirth)" /> -->
-    <a tal:content="python: model.getDateOfBirth()" />
+    <a tal:content="python: model.getDateOfBirth().strftime('%d/%m/%Y')" />
   </td>
   </tr>
   <tr>
@@ -85,14 +93,6 @@
   </td>
   <td>
     <a tal:content="model/PatientAddress"/>
-  </td>
-  </tr>
-  <tr>
-  <td class="label" i18n:translate="">
-  <div>Experiment with Age</div>
-  </td>
-  <td>
-  <a tal:content="python: '%d years, %d months (no DOB available)' % (model.getAge().years, model.getAge().months)"/>
   </td>
   </tr>
   </table>
