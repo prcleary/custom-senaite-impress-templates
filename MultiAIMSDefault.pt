@@ -68,7 +68,7 @@
   </td>
   <td>
     <!-- <a tal:content="python:view.to_localized_time(model.getDateOfBirth)" /> -->
-    <a tal:content="model.getDateOfBirth" />
+    <a tal:content="model/getDateOfBirth" />
   </td>
   </tr>
   <tr>
