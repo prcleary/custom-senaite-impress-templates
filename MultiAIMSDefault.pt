@@ -29,8 +29,8 @@
   <div class="col-6 text-right">
   <!-- Header Right -->
   <!-- tal:attributes="src python:view.get_toolbar_logo();style styles/logo_styles"/> -->
-  <img class="logo image-fluid" style="object-fit:contain">
-  <tal:attributes="src python:view.get_resource_url('aims_logo.jpg')"/>
+  <!-- <tal:attributes="src python:view.get_resource_url('aims_logo.jpg')"/> -->
+  <img class="logo image-fluid" style="object-fit:contain" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" height="35px" alt="AIMS logo" title="AIMS logo">
   </img>
   </div>
   </div>
