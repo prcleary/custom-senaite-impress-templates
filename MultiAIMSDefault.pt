@@ -92,7 +92,7 @@
   <div>Experiment with Age</div>
   </td>
   <td>
-  <a tal:content="python: '%d years, %d months' % (model.getAge().years, model.getAge().months"/>
+  <a tal:content="python: '%d years, %d months' % (model.getAge().years, model.getAge().months)"/>
   </td>
   </tr>
   </table>
