@@ -23,8 +23,8 @@
   <!-- Header Table -->
   <div class="row section-header no-gutters">
   <!-- Header Left -->
-  <div class="col-2 text-left">
-  <img class="logo image-fluid" style="object-fit:contain; height:auto" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" alt="AIMS logo" title="AIMS logo">
+  <div class="col-2 text-left align-top">
+  <img class="logo image-fluid" style="object-fit:contain; height:75px" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" alt="AIMS logo" title="AIMS logo">
   </img>
   </div>
   <div class="col-10 text-left">
