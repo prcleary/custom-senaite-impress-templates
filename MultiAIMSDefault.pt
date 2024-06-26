@@ -77,7 +77,7 @@
   <td>
     <!-- <a tal:content="python:view.to_localized_time(model.getDateOfBirth)" /> -->
     <a tal:content="python: model.getDateOfBirth()[0].strftime('%d/%m/%Y')" />
-    <a tal:content="python: model.getDateOfBirthEstimated()"/>
+    <a tal:condition="python: model.getDateOfBirthEstimated()" tal:content=" (estimated)"/>
   </td>
   </tr>
   <tr>
