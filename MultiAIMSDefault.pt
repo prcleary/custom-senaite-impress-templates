@@ -25,6 +25,14 @@
   <table class="table table-sm table-condensed">
   <tr>
   <td class="label" i18n:translate="">
+    <div> <strong>Medical Record Number</strong> </div>
+  </td>
+  <td>
+    <a tal:content="model/MedicalRecordNumber/value"/>
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
     <div> <strong>First Name</strong> </div>
   </td>
   <td>
