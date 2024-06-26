@@ -83,7 +83,7 @@
     <div>Patient Address</div>
   </td>
   <td>
-    <a tal:content="model.PatientAddress"/>
+    <a tal:content="model/PatientAddress"/>
   </td>
   </tr>
   <tr>
