@@ -11,6 +11,12 @@
 
   <!--  REPORT HEADER <tal:t replace="structure python:view.render_header(context, **options)" /> -->
 
+  <!-- REPORT INFO -->
+  <tal:t replace="structure python:view.render_info(context, **options)" />
+
+  <!-- REPORT ALERTS -->
+  <tal:t replace="structure python:view.render_alerts(context, **options)" />
+
   <!-- PATIENT INFO -->
   <table class="table table-sm table-condensed">
   <tr>
@@ -31,22 +37,6 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Middle Name</strong> </div>
-  </td>
-  <td> 
-    <a tal:content="model/PatientFullName/middlename"/>
-  </td>
-  </tr>
-  <tr>
-  <td class="label" i18n:translate="">
-    <div> <strong>Last Name</strong> </div>
-  </td>
-  <td>
-    <a tal:content="model/PatientFullName/lastname"/>
-  </td>
-  </tr>
-  <tr>
-  <td class="label" i18n:translate="">
     <div> <strong>Date Of Birth/Age</strong> </div>
   </td>
   <td class="label" i18n:translate="">
@@ -63,12 +53,6 @@
   </tr>
   </table>
   
-  <!-- REPORT INFO -->
-  <tal:t replace="structure python:view.render_info(context, **options)" />
-
-  <!-- REPORT ALERTS -->
-  <tal:t replace="structure python:view.render_alerts(context, **options)" />
-
   <!-- REPORT SUMMARY -->
   <tal:t replace="structure python:view.render_summary(context, **options)" />
 
