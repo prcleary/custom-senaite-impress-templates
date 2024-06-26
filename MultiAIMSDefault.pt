@@ -92,7 +92,7 @@
   <div>Experiment with Age</div>
   </td>
   <td>
-  <a tal:content="model.getAge"/>
+  <a tal:content="model/getAge"/>
   </td>
   </tr>
   </table>
