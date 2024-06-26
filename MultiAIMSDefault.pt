@@ -28,9 +28,10 @@
   </div>
   <div class="col-6 text-right">
   <!-- Header Right -->
-  <img class="logo image-fluid" style="object-fit:contain"
-    <!-- tal:attributes="src python:view.get_toolbar_logo();style styles/logo_styles"/> -->
+  <!-- tal:attributes="src python:view.get_toolbar_logo();style styles/logo_styles"/> -->
+  <img class="logo image-fluid" style="object-fit:contain">
   tal:attributes="src python:view.get_resource_url('aims_logo.jpg'); style "height:35px"/>
+  </img>
   </div>
   </div>
 
