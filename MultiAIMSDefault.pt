@@ -23,12 +23,12 @@
   <div class="row section-header no-gutters">
   <!-- Header Table -->
   <div class="col-6 text-left">
-  <!-- Header Right -->
+  <!-- Header Left -->
   <img class="logo image-fluid" style="object-fit:contain; height:50px; vertical-align:top" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" alt="AIMS logo" title="AIMS logo">
   </img>
   </div>
-  <div class="col-6 text-right">
-  <!-- Header Left -->
+  <div class="col-6 text-left">
+  <!-- Header Right -->
   <h1><strong>Abbas Institute of Medical Sciences</strong></h1>
   <h1>Analysis Report</h1>
   </div>
