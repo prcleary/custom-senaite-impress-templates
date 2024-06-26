@@ -9,14 +9,7 @@
   <!-- REPORT CSS -->
   <tal:t replace="structure python:view.render_css(context, **options)" />
 
-  <!-- REPORT HEADER -->
-  <tal:t replace="structure python:view.render_header(context, **options)" />
-
-  <!-- REPORT INFO -->
-  <tal:t replace="structure python:view.render_info(context, **options)" />
-
-  <!-- REPORT ALERTS -->
-  <tal:t replace="structure python:view.render_alerts(context, **options)" />
+  <!--  REPORT HEADER <tal:t replace="structure python:view.render_header(context, **options)" /> -->
 
   <!-- PATIENT INFO -->
   <table class="table table-sm table-condensed">
@@ -70,6 +63,12 @@
   </tr>
   </table>
   
+  <!-- REPORT INFO -->
+  <tal:t replace="structure python:view.render_info(context, **options)" />
+
+  <!-- REPORT ALERTS -->
+  <tal:t replace="structure python:view.render_alerts(context, **options)" />
+
   <!-- REPORT SUMMARY -->
   <tal:t replace="structure python:view.render_summary(context, **options)" />
 
