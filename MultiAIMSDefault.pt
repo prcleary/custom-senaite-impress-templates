@@ -86,6 +86,14 @@
     <a tal:content="model/PatientAddress"/>
   </td>
   </tr>
+  <tr>
+  <td class="label" i18n:translate="">
+  <div>Experiment with Age</div>
+  </td>
+  <td>
+  <a tal:content="model/getAge"/>
+  </td>
+  </tr>
   </table>
   </div>
   </div>
