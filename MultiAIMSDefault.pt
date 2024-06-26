@@ -1,5 +1,13 @@
 <tal:report define="model python:view.model;">
 
+  <!-- Custom CSS -->
+  <tal:css>
+  <style type="text/css">
+  
+  </style>
+  </tal:css>
+  
+
   <!-- REPORT CONTROLS -->
   <tal:t replace="structure python:view.render_controls(context, **options)" />
 
@@ -10,6 +18,20 @@
   <tal:t replace="structure python:view.render_css(context, **options)" />
 
   <!--  REPORT HEADER <tal:t replace="structure python:view.render_header(context, **options)" /> -->
+  
+  <!-- NEW REPORT HEADER -->
+  <div class="row section-header no-gutters">
+  <!-- Header Table -->
+  <div class="col-6 text-left">
+  <!-- Header Left -->
+  <h1>Analysis Report</h1>
+  </div>
+  <div class="col-6 text-right">
+  <!-- Header Right -->
+  <img class="logo image-fluid" style="object-fit:contain"
+    tal:attributes="src python:view.get_toolbar_logo();style styles/logo_styles"/>
+  </div>
+  </div>
 
   <!-- REPORT INFO -->
   <tal:t replace="structure python:view.render_info(context, **options)" />
@@ -67,9 +89,6 @@
   </div>
   </div>
   
-  <!-- REPORT SUMMARY -->
-  <tal:t replace="structure python:view.render_summary(context, **options)" />
-
   <!-- REPORT RESULTS -->
   <tal:t replace="structure python:view.render_results(context, **options)" />
 
@@ -79,6 +98,9 @@
   <!-- SAMPLE REMARKS -->
   <tal:t replace="structure python:view.render_remarks(context, **options)" />
 
+  <!-- REPORT SUMMARY -->
+  <tal:t replace="structure python:view.render_summary(context, **options)" />
+  
   <!-- REPORT ATTACHMENTS -->
   <tal:t replace="structure python:view.render_attachments(context, **options)" />
 
