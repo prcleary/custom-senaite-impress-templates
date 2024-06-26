@@ -21,7 +21,7 @@
   <table class="table table-sm table-condensed">
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Medical Record Number</strong> </div>
+    <div> <strong>Patient Medical Record Number</strong> </div>
   </td>
   <td>
     <a tal:content="model/MedicalRecordNumber/value"/>
@@ -29,7 +29,7 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Full Name</strong> </div>
+    <div> <strong>Patient Full Name</strong> </div>
   </td>
   <td>
     <a tal:content="model/getPatientFullName"/>
@@ -37,7 +37,7 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Date Of Birth/Age</strong> </div>
+    <div> <strong>Patient Date Of Birth/Age</strong> </div>
   </td>
   <td class="label" i18n:translate="">
     <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" />
@@ -45,10 +45,18 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Sex</strong> </div>
+    <div> <strong>Patient Sex</strong> </div>
   </td>
   <td>
     <a tal:condition="python: model.Sex == 'm'" tal:content="python: 'Male'" /><a tal:condition="python: model.Sex == 'f'" tal:content="python: 'Female'" /><a tal:condition="python: model.Sex == ''" tal:content="python: 'Undefined'" />
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
+    <div> <strong>Patient Address/Age</strong> </div>
+  </td>
+  <td class="label" i18n:translate="">
+    <a tal:content="model/PatientAddress"/>
   </td>
   </tr>
   </table>
