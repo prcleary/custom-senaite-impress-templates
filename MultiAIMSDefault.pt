@@ -18,10 +18,14 @@
   <tal:t replace="structure python:view.render_alerts(context, **options)" />
 
   <!-- PATIENT INFO -->
+  
+  <div class="row section-summary no-gutters">
+  <div class="w-100">
+  <h1>Patient Information</h1>
   <table class="table table-sm table-condensed">
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Patient Medical Record Number</strong> </div>
+    <div>Patient Medical Record Number</div>
   </td>
   <td>
     <a tal:content="model/MedicalRecordNumber/value"/>
@@ -29,7 +33,7 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Patient Full Name</strong> </div>
+    <div>Patient Full Name</div>
   </td>
   <td>
     <a tal:content="model/getPatientFullName"/>
@@ -37,7 +41,7 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Patient Date Of Birth/Age</strong> </div>
+    <div>Patient Date Of Birth/Age</div>
   </td>
   <td class="label" i18n:translate="">
     <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" />
@@ -45,7 +49,7 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Patient Sex</strong> </div>
+    <div>Patient Sex</div>
   </td>
   <td>
     <a tal:condition="python: model.Sex == 'm'" tal:content="python: 'Male'" /><a tal:condition="python: model.Sex == 'f'" tal:content="python: 'Female'" /><a tal:condition="python: model.Sex == ''" tal:content="python: 'Undefined'" />
@@ -53,13 +57,15 @@
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-    <div> <strong>Patient Address/Age</strong> </div>
+    <div>Patient Address</div>
   </td>
   <td class="label" i18n:translate="">
     <a tal:content="model/PatientAddress"/>
   </td>
   </tr>
   </table>
+  </div>
+  </div>
   
   <!-- REPORT SUMMARY -->
   <tal:t replace="structure python:view.render_summary(context, **options)" />
