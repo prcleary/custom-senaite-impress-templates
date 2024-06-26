@@ -25,15 +25,43 @@
   <table class="table table-sm table-condensed">
   <tr>
   <td class="label" i18n:translate="">
-  <div> <strong>Patient First Name</strong> </div>
+    <div> <strong>First Name</strong> </div>
   </td>
-  <td> <a tal:content="model/PatientFullName/firstname"/></td>
+  <td>
+    <a tal:content="model/PatientFullName/firstname"/>
+  </td>
   </tr>
   <tr>
   <td class="label" i18n:translate="">
-  <div> <strong>Patient Date Of Birth and Gender</strong> </div>
+    <div> <strong>Middle Name</strong> </div>
   </td>
-  <td> <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" /><a> / </a><a tal:condition="python: model.Sex == 'm'" tal:content="python: 'Male'" /><a tal:condition="python: model.Sex == 'f'" tal:content="python: 'Female'" /><a tal:condition="python: model.Sex == ''" tal:content="python: 'Undefined'" /></td>
+  <td> 
+    <a tal:content="model/PatientFullName/middlename"/>
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
+    <div> <strong>Last Name</strong> </div>
+  </td>
+  <td>
+    <a tal:content="model/PatientFullName/lastname"/>
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
+    <div> <strong>Date Of Birth/Age</strong> </div>
+  </td>
+  <td class="label" i18n:translate="">
+    <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" />
+  </td>
+  </tr>
+  <tr>
+  <td class="label" i18n:translate="">
+    <div> <strong>Sex</strong> </div>
+  </td>
+  <td>
+    <a tal:condition="python: model.Sex == 'm'" tal:content="python: 'Male'" /><a tal:condition="python: model.Sex == 'f'" tal:content="python: 'Female'" /><a tal:condition="python: model.Sex == ''" tal:content="python: 'Undefined'" />
+  </td>
   </tr>
   </table>
   <!-- REPORT RESULTS -->
