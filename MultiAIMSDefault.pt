@@ -67,7 +67,7 @@
     <div>Patient Date Of Birth/Age</div>
   </td>
   <td>
-    <a tal:content="python:view.to_localized_time(model.DateOfBirth, long_format=0)" />
+    <a tal:content="python:view.to_localized_time(model.getDateOfBirth, long_format=0)" />
   </td>
   </tr>
   <tr>
