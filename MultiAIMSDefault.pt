@@ -48,7 +48,7 @@
   <table class="table table-sm table-condensed">
   <tr>
   <td class="label" i18n:translate="">
-    <div>Patient Medical Record Number</div>
+    <div>Patient MRN</div>
   </td>
   <td>
     <a tal:content="model/MedicalRecordNumber/value"/>
@@ -68,7 +68,7 @@
   </td>
   <td>
     <!-- <a tal:content="python:view.to_localized_time(model.getDateOfBirth)" /> -->
-    <a tal:content="model/getDateOfBirth" />
+    <a tal:content="model/getDateOfBirth[0]" />
   </td>
   </tr>
   <tr>
