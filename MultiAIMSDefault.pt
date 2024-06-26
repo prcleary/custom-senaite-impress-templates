@@ -24,11 +24,12 @@
   <!-- Header Table -->
   <div class="col-6 text-left">
   <!-- Header Left -->
+  <h1>Abbas Institute of Medical Sciences</h1>
   <h1>Analysis Report</h1>
   </div>
   <div class="col-6 text-right">
   <!-- Header Right -->
-  <img class="logo image-fluid" style="object-fit:contain; height:100px" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" alt="AIMS logo" title="AIMS logo">
+  <img class="logo image-fluid" style="object-fit:contain; height:50px" src="https://senaite.paulcleary.net/ajkdemo/aims_logo.jpg" alt="AIMS logo" title="AIMS logo">
   </img>
   </div>
   </div>
